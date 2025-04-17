@@ -17,12 +17,12 @@ export function formatDate(dateString: string): string {
 export function getMonthTheme(monthYear: string): string {
   // Create a mapping of month/year to theme
   const monthThemes: Record<string, string> = {
-    "April 2025": "Personal & Professional Narratives",
-    "May 2025": "Technical Expertise with a Fun Twist",
-    "June 2025": "Leadership & Advocacy",
-    "July 2025": "Integrative Fun & Advocacy",
-    "August 2025": "Advanced Content & Expanding Influence",
-    "September 2025": "Authority Building & Strategic Positioning",
+    "May 2025": "Personal & Professional Narratives",
+    "June 2025": "Technical Expertise with a Fun Twist",
+    "July 2025": "Leadership & Advocacy",
+    "August 2025": "Integrative Fun & Advocacy",
+    "September 2025": "Advanced Content & Expanding Influence",
+    "October 2025": "Authority Building & Strategic Positioning",
   }
 
   return monthThemes[monthYear] || ""

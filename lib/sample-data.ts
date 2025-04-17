@@ -47,7 +47,493 @@ export function generateSampleTasks(): Task[] {
   }
 
   return [
-    // Month 1: May 2025 - Personal & Professional Narratives (shifted from April)
+    // Skill Development Tasks - May 2025
+    // Week 1
+    {
+      id: "skill-may-w1-tue",
+      title: "Complete React.js Tutorial Module 1",
+      description:
+        "Start the 'Full Modern React Tutorial' by Net Ninja on YouTube. Complete Module 1 focusing on React fundamentals and component basics. Resource: https://www.youtube.com/c/TheNetNinja",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-may-w1-thu",
+      title: "Learn Web Accessibility Fundamentals",
+      description:
+        "Complete the first module of Udacity's Web Accessibility course focusing on WCAG guidelines and semantic HTML. Resource: https://www.udacity.com/course/web-accessibility--ud891",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-may-w2-tue",
+      title: "Complete React.js Tutorial Module 2",
+      description:
+        "Continue the 'Full Modern React Tutorial' by Net Ninja. Complete Module 2 focusing on state management and hooks. Resource: https://www.youtube.com/c/TheNetNinja",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-may-w2-thu",
+      title: "Start TypeScript Course Module 1",
+      description:
+        "Begin the TypeScript course on freeCodeCamp. Complete Module 1 covering TypeScript basics and type annotations. Resource: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-may-w3-tue",
+      title: "Complete Node.js API Fundamentals",
+      description:
+        "Start the 'Node.js API Masterclass' by Traversy Media. Complete the section on RESTful API basics and Express setup. Resource: https://www.youtube.com/c/TraversyMedia",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-may-w3-thu",
+      title: "Learn SQL Basics on Khan Academy",
+      description:
+        "Complete the first module of 'Introduction to SQL' on Khan Academy covering database fundamentals and basic queries. Resource: https://www.khanacademy.org/computing/computer-programming/sql",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-may-w4-tue",
+      title: "Complete Authentication & Security Basics",
+      description:
+        "Work through the Authentication & Security module from The Odin Project, focusing on JWT and secure authentication practices. Resource: https://www.theodinproject.com",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-may-w4-thu",
+      title: "Learn Cloud Services Fundamentals",
+      description:
+        "Complete the first module of Google Cloud Skills Boost focusing on cloud computing basics and service models. Resource: https://www.cloudskillsboost.google/",
+      dueDate: createDateForWeekDay(may2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Skill Development Tasks - June 2025
+    // Week 1
+    {
+      id: "skill-june-w1-tue",
+      title: "Complete React.js Tutorial Module 3",
+      description:
+        "Continue the 'Full Modern React Tutorial' by Net Ninja. Complete Module 3 focusing on routing and navigation. Resource: https://www.youtube.com/c/TheNetNinja",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-june-w1-thu",
+      title: "Learn Cybersecurity Fundamentals",
+      description:
+        "Complete the first module of IBM's Cybersecurity Fundamentals course focusing on security principles and threat models. Resource: https://www.ibm.com/skills/topics/cybersecurity/",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-june-w2-tue",
+      title: "Complete TypeScript Course Module 2",
+      description:
+        "Continue the TypeScript course on freeCodeCamp. Complete Module 2 covering interfaces, classes, and generics. Resource: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-june-w2-thu",
+      title: "Learn Database Design Principles",
+      description:
+        "Complete the database design module from Khan Academy's SQL course, focusing on normalization and relationships. Resource: https://www.khanacademy.org/computing/computer-programming/sql",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-june-w3-tue",
+      title: "Complete Node.js API Authentication",
+      description:
+        "Continue the 'Node.js API Masterclass' by Traversy Media. Complete the section on JWT authentication and user management. Resource: https://www.youtube.com/c/TraversyMedia",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-june-w3-thu",
+      title: "Learn NoSQL Database Concepts",
+      description:
+        "Complete a tutorial on MongoDB basics and document database design principles. Resource: https://university.mongodb.com/",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-june-w4-tue",
+      title: "Complete Backend Testing Fundamentals",
+      description:
+        "Learn about unit and integration testing for Node.js applications using Jest and Supertest. Resource: https://jestjs.io/docs/getting-started",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-june-w4-thu",
+      title: "Learn Azure Fundamentals",
+      description:
+        "Complete the first module of Microsoft Learn: Azure Fundamentals focusing on cloud concepts and Azure services. Resource: https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/",
+      dueDate: createDateForWeekDay(june2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Skill Development Tasks - July 2025
+    // Week 1
+    {
+      id: "skill-july-w1-tue",
+      title: "Complete React.js State Management",
+      description:
+        "Learn about Context API and Redux for state management in React applications. Resource: https://www.youtube.com/c/TheNetNinja",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-july-w1-thu",
+      title: "Learn SANS Cyber Aces Fundamentals",
+      description:
+        "Complete the first module of SANS Cyber Aces Online focusing on networking security and system administration. Resource: https://www.cyberaces.org/",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-july-w2-tue",
+      title: "Complete Frontend Testing Basics",
+      description:
+        "Learn about testing React components using React Testing Library and Jest. Resource: https://testing-library.com/docs/react-testing-library/intro/",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-july-w2-thu",
+      title: "Learn Microservices Architecture",
+      description:
+        "Complete a tutorial on microservices principles, patterns, and implementation with Node.js. Resource: https://microservices.io/",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-july-w3-tue",
+      title: "Complete Social Impact Measurement Basics",
+      description:
+        "Start the Social Impact Strategy course on Coursera focusing on impact metrics and measurement frameworks. Resource: https://www.coursera.org/learn/social-impact",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-july-w3-thu",
+      title: "Learn Data Visualization with D3.js",
+      description:
+        "Complete the first module of freeCodeCamp's Data Visualization with D3.js course. Resource: https://www.freecodecamp.org/learn/data-visualization/",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-july-w4-tue",
+      title: "Complete Software Architecture Fundamentals",
+      description:
+        "Start Udacity's Software Architecture & Design course focusing on architectural patterns and design principles. Resource: https://www.udacity.com/course/software-architecture-design--ud821",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-july-w4-thu",
+      title: "Learn Technical Documentation Best Practices",
+      description:
+        "Complete a tutorial on creating effective technical documentation for software projects. Resource: https://www.writethedocs.org/guide/",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Skill Development Tasks - August 2025
+    // Week 1
+    {
+      id: "skill-aug-w1-tue",
+      title: "Complete Agile Development Fundamentals",
+      description:
+        "Start the Agile Development course on Coursera focusing on Scrum and Kanban methodologies. Resource: https://www.coursera.org/learn/agile-development",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-aug-w1-thu",
+      title: "Learn Technical Mentorship Skills",
+      description:
+        "Complete a module on effective technical mentorship and coaching techniques for engineering teams. Resource: https://www.edx.org/learn/engineering/engineering-leadership",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-aug-w2-tue",
+      title: "Complete User Research Fundamentals",
+      description:
+        "Start the User Experience Research and Design course on Coursera focusing on user research methods and analysis. Resource: https://www.coursera.org/specializations/michiganux",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-aug-w2-thu",
+      title: "Learn Stakeholder Management",
+      description:
+        "Complete a module on effective stakeholder management and communication strategies for technical projects. Resource: https://www.edx.org/learn/product-management",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-aug-w3-tue",
+      title: "Complete Project Management Fundamentals",
+      description:
+        "Start Google's Project Management Certificate focusing on project planning and execution. Resource: https://www.coursera.org/professional-certificates/google-project-management",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-aug-w3-thu",
+      title: "Learn Agile Project Management",
+      description:
+        "Complete Atlassian's Agile Project Management tutorial focusing on agile ceremonies and artifacts. Resource: https://www.atlassian.com/agile",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-aug-w4-tue",
+      title: "Complete Data Analysis Fundamentals",
+      description:
+        "Start Harvard's Data Science course on edX focusing on data analysis methods and tools. Resource: https://www.edx.org/learn/data-science/harvard-university-data-science-r-basics",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-aug-w4-thu",
+      title: "Learn Data Visualization Techniques",
+      description:
+        "Complete a module on effective data visualization principles and tools for impact reporting. Resource: https://www.coursera.org/learn/datavisualization",
+      dueDate: createDateForWeekDay(august2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Skill Development Tasks - September 2025
+    // Week 1
+    {
+      id: "skill-sept-w1-tue",
+      title: "Complete Machine Learning Fundamentals",
+      description:
+        "Start Google's Machine Learning Crash Course focusing on ML concepts and TensorFlow basics. Resource: https://developers.google.com/machine-learning/crash-course",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-sept-w1-thu",
+      title: "Learn Responsible AI Principles",
+      description:
+        "Complete a module on ethical AI development and responsible implementation practices. Resource: https://www.fast.ai/",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-sept-w2-tue",
+      title: "Complete Docker Fundamentals",
+      description:
+        "Start Docker's official tutorial for beginners focusing on containerization basics and Docker commands. Resource: https://docs.docker.com/get-started/",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-sept-w2-thu",
+      title: "Learn Kubernetes Basics",
+      description:
+        "Complete the Kubernetes Basics tutorial from kubernetes.io focusing on pod deployment and scaling. Resource: https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-sept-w3-tue",
+      title: "Complete Terraform Fundamentals",
+      description:
+        "Start HashiCorp's Terraform tutorial focusing on infrastructure as code principles and basic commands. Resource: https://learn.hashicorp.com/terraform",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-sept-w3-thu",
+      title: "Learn Progressive Web Apps",
+      description:
+        "Complete a tutorial on building Progressive Web Apps with service workers and offline functionality. Resource: https://web.dev/progressive-web-apps/",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-sept-w4-tue",
+      title: "Complete Technical Strategy Fundamentals",
+      description:
+        "Start a course on developing effective technical strategies for social impact organizations. Resource: https://www.edx.org/learn/product-management",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-sept-w4-thu",
+      title: "Learn Risk Management for Tech Projects",
+      description:
+        "Complete a module on identifying, assessing, and mitigating risks in technical projects. Resource: https://www.open.edu/openlearn/money-business/project-management-the-basics/content-section-0",
+      dueDate: createDateForWeekDay(september2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Skill Development Tasks - October 2025
+    // Week 1
+    {
+      id: "skill-oct-w1-tue",
+      title: "Complete AI Integration Fundamentals",
+      description:
+        "Learn about integrating AI services into applications using APIs and SDKs. Resource: https://www.fast.ai/",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-oct-w1-thu",
+      title: "Learn Voice Interface Design",
+      description:
+        "Complete a tutorial on designing and implementing voice interfaces for accessibility and inclusion. Resource: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/resources",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-oct-w2-tue",
+      title: "Complete Blockchain Fundamentals",
+      description:
+        "Start Coursera's Blockchain Basics course focusing on distributed ledger technology and applications. Resource: https://www.coursera.org/learn/blockchain-basics",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-oct-w2-thu",
+      title: "Learn AR/VR Development Basics",
+      description:
+        "Complete Unity Learn's Introduction to AR/VR Development focusing on immersive technology fundamentals. Resource: https://learn.unity.com/",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-oct-w3-tue",
+      title: "Complete Adult Learning Principles",
+      description:
+        "Start UC San Diego's Learning How to Learn course on Coursera focusing on effective learning strategies. Resource: https://www.coursera.org/learn/learning-how-to-learn",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-oct-w3-thu",
+      title: "Learn Instructional Design Basics",
+      description:
+        "Complete Commonwealth of Learning's E-Learning Instructional Design tutorial focusing on creating effective learning materials. Resource: https://www.col.org/",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-oct-w4-tue",
+      title: "Complete Civic Tech Fundamentals",
+      description:
+        "Start edX's Digital Government and Civic Tech course focusing on technology for public good. Resource: https://www.edx.org/learn/government/digital-government",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "skill-oct-w4-thu",
+      title: "Learn Open Data Standards",
+      description:
+        "Complete School of Data's Open Data Basics tutorial focusing on data standards and civic applications. Resource: https://schoolofdata.org/",
+      dueDate: createDateForWeekDay(october2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Short",
+      completed: false,
+    },
+
+    // Month 1: May 2025 - Personal & Professional Narratives
     // Week 1
     {
       id: "may-w1-mon",

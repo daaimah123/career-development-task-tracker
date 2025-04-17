@@ -30,10 +30,7 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
     })
   }
 
-  // Find the getCategoryColorClass function and replace it with this implementation
-  // to ensure it matches the badge colors from getCategoryBadgeClass
-
-  // Replace this function:
+  // Get category color class for status indicators
   const getCategoryColorClass = (category: string) => {
     const categoryLower = category.toLowerCase()
 
@@ -146,34 +143,13 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
         {dayTasks.length > 0 && (
           <div className="flex justify-end gap-1 mt-1">
             {/* Group tasks by category and show a dot for each category */}
-            {Array.from(new Set(dayTasks.map((task) => task.category))).map((category, index) => {
-              const categoryColor = task.category.toLowerCase()
-              let colorClass = ""
-
-              switch (categoryColor) {
-                case "writing":
-                  colorClass = "bg-blue-500"
-                  break
-                case "short":
-                  colorClass = "bg-green-500"
-                  break
-                case "networking":
-                  colorClass = "bg-indigo-500"
-                  break
-                case "job search":
-                  colorClass = "bg-yellow-500"
-                  break
-                case "presentation":
-                  colorClass = "bg-purple-500"
-                  break
-                default:
-                  colorClass = "bg-gray-500"
-              }
-
-              return (
-                <span key={index} className={`w-2 h-2 rounded-full ${colorClass}`} title={`${category} tasks`}></span>
-              )
-            })}
+            {Array.from(new Set(dayTasks.map((task) => task.category))).map((category, index) => (
+              <span
+                key={index}
+                className={`w-2 h-2 rounded-full ${getCategoryColorClass(category)}`}
+                title={`${category} tasks`}
+              ></span>
+            ))}
 
             {/* Show completed indicator if any tasks are completed */}
             {dayTasks.some((task) => task.completed) && (

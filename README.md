@@ -25,6 +25,13 @@ This application is designed for:
 - **Task Filtering**: Filter tasks by status (all, pending, completed, overdue)
 - **Task Categories**: Organize tasks by type (Writing, Networking, Job Search, etc.)
 - **Monthly Themes**: Tasks are grouped by month with dedicated themes
+- **Monthly Themes**:
+    - May 2025: Personal & Professional Narratives
+    - June 2025: Technical Expertise with a Fun Twist
+    - July 2025: Leadership & Advocacy
+    - August 2025: Integrative Fun & Advocacy
+    - September 2025: Advanced Content & Expanding Influence
+    - October 2025: Authority Building & Strategic Positioning
 - **Visual Indicators**: Color-coded categories and completion status
 - **Task Management**: Add, edit, and delete tasks with ease
 - **Completion Tracking**: Mark tasks as completed with visual confirmation

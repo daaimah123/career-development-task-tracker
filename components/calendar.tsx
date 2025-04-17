@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import type { Task } from "@/types"
-import { getCategoryBadgeClass } from "@/lib/utils"
 
 interface CalendarProps {
   tasks: Task[]
@@ -31,15 +30,27 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
     })
   }
 
-  // Get category color class for status indicators
+  // Find the getCategoryColorClass function and replace it with this implementation
+  // to ensure it matches the badge colors from getCategoryBadgeClass
+
+  // Replace this function:
   const getCategoryColorClass = (category: string) => {
-    const badgeClass = getCategoryBadgeClass(category)
-    // Extract the color from the badge class (e.g., "bg-blue-100 text-blue-800" -> "bg-blue-500")
-    const colorMatch = badgeClass.match(/bg-(\w+)-\d+/)
-    if (colorMatch && colorMatch[1]) {
-      return `bg-${colorMatch[1]}-500`
+    const categoryLower = category.toLowerCase()
+
+    switch (categoryLower) {
+      case "writing":
+        return "bg-blue-500"
+      case "short":
+        return "bg-green-500"
+      case "networking":
+        return "bg-indigo-500"
+      case "job search":
+        return "bg-yellow-500"
+      case "presentation":
+        return "bg-purple-500"
+      default:
+        return "bg-gray-500"
     }
-    return "bg-gray-500" // Default fallback
   }
 
   // Navigate to previous month
@@ -82,8 +93,28 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
           {dayTasks.length > 0 ? (
             <div className="space-y-1">
               {dayTasks.slice(0, 3).map((task) => {
-                // Get the appropriate color class based on category
-                const categoryColorClass = getCategoryBadgeClass(task.category)
+                const categoryColor = task.category.toLowerCase()
+                let borderClass = ""
+
+                switch (categoryColor) {
+                  case "writing":
+                    borderClass = "border-blue-500"
+                    break
+                  case "short":
+                    borderClass = "border-green-500"
+                    break
+                  case "networking":
+                    borderClass = "border-indigo-500"
+                    break
+                  case "job search":
+                    borderClass = "border-yellow-500"
+                    break
+                  case "presentation":
+                    borderClass = "border-purple-500"
+                    break
+                  default:
+                    borderClass = "border-gray-500"
+                }
 
                 return (
                   <div
@@ -93,7 +124,7 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
                         ? "bg-green-50 border-l-2 border-green-500 line-through text-gray-500"
                         : new Date(task.dueDate) < today && !task.completed
                           ? "bg-red-50 border-l-2 border-red-500"
-                          : `${categoryColorClass.replace("text-", "border-l-2 ")} border-l-2`
+                          : `bg-${categoryColor.split(" ")[0]}-50 border-l-2 ${borderClass}`
                     }`}
                     title={task.title}
                   >
@@ -115,13 +146,34 @@ export function Calendar({ tasks, onDayClick }: CalendarProps) {
         {dayTasks.length > 0 && (
           <div className="flex justify-end gap-1 mt-1">
             {/* Group tasks by category and show a dot for each category */}
-            {Array.from(new Set(dayTasks.map((task) => task.category))).map((category, index) => (
-              <span
-                key={index}
-                className={`w-2 h-2 rounded-full ${getCategoryColorClass(category)}`}
-                title={`${category} tasks`}
-              ></span>
-            ))}
+            {Array.from(new Set(dayTasks.map((task) => task.category))).map((category, index) => {
+              const categoryColor = task.category.toLowerCase()
+              let colorClass = ""
+
+              switch (categoryColor) {
+                case "writing":
+                  colorClass = "bg-blue-500"
+                  break
+                case "short":
+                  colorClass = "bg-green-500"
+                  break
+                case "networking":
+                  colorClass = "bg-indigo-500"
+                  break
+                case "job search":
+                  colorClass = "bg-yellow-500"
+                  break
+                case "presentation":
+                  colorClass = "bg-purple-500"
+                  break
+                default:
+                  colorClass = "bg-gray-500"
+              }
+
+              return (
+                <span key={index} className={`w-2 h-2 rounded-full ${colorClass}`} title={`${category} tasks`}></span>
+              )
+            })}
 
             {/* Show completed indicator if any tasks are completed */}
             {dayTasks.some((task) => task.completed) && (

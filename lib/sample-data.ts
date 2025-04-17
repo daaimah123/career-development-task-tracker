@@ -21,13 +21,15 @@ export function generateSampleTasks(): Task[] {
     return date
   }
 
-  // Create dates for specific months - shifted by one month
+  // Create dates for specific months
   const may2025FirstMonday = getFirstMonday(2025, 4) // May 2025
   const june2025FirstMonday = getFirstMonday(2025, 5) // June 2025
   const july2025FirstMonday = getFirstMonday(2025, 6) // July 2025
   const august2025FirstMonday = getFirstMonday(2025, 7) // August 2025
   const september2025FirstMonday = getFirstMonday(2025, 8) // September 2025
   const october2025FirstMonday = getFirstMonday(2025, 9) // October 2025
+  const november2025FirstMonday = getFirstMonday(2025, 10) // November 2025
+  const december2025FirstMonday = getFirstMonday(2025, 11) // December 2025
 
   // Helper to create a date for a specific day in a week
   const createDateForWeekDay = (baseMonday: Date, weekOffset: number, dayOffset: number) => {
@@ -55,7 +57,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start the 'Full Modern React Tutorial' by Net Ninja on YouTube. Complete Module 1 focusing on React fundamentals and component basics. Resource: https://www.youtube.com/c/TheNetNinja",
       dueDate: createDateForWeekDay(may2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -64,7 +66,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of Udacity's Web Accessibility course focusing on WCAG guidelines and semantic HTML. Resource: https://www.udacity.com/course/web-accessibility--ud891",
       dueDate: createDateForWeekDay(may2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -75,7 +77,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Continue the 'Full Modern React Tutorial' by Net Ninja. Complete Module 2 focusing on state management and hooks. Resource: https://www.youtube.com/c/TheNetNinja",
       dueDate: createDateForWeekDay(may2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -84,7 +86,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Begin the TypeScript course on freeCodeCamp. Complete Module 1 covering TypeScript basics and type annotations. Resource: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/",
       dueDate: createDateForWeekDay(may2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -95,7 +97,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start the 'Node.js API Masterclass' by Traversy Media. Complete the section on RESTful API basics and Express setup. Resource: https://www.youtube.com/c/TraversyMedia",
       dueDate: createDateForWeekDay(may2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -104,7 +106,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of 'Introduction to SQL' on Khan Academy covering database fundamentals and basic queries. Resource: https://www.khanacademy.org/computing/computer-programming/sql",
       dueDate: createDateForWeekDay(may2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -115,7 +117,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Work through the Authentication & Security module from The Odin Project, focusing on JWT and secure authentication practices. Resource: https://www.theodinproject.com",
       dueDate: createDateForWeekDay(may2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -124,7 +126,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of Google Cloud Skills Boost focusing on cloud computing basics and service models. Resource: https://www.cloudskillsboost.google/",
       dueDate: createDateForWeekDay(may2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -136,7 +138,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Continue the 'Full Modern React Tutorial' by Net Ninja. Complete Module 3 focusing on routing and navigation. Resource: https://www.youtube.com/c/TheNetNinja",
       dueDate: createDateForWeekDay(june2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -145,7 +147,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of IBM's Cybersecurity Fundamentals course focusing on security principles and threat models. Resource: https://www.ibm.com/skills/topics/cybersecurity/",
       dueDate: createDateForWeekDay(june2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -156,7 +158,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Continue the TypeScript course on freeCodeCamp. Complete Module 2 covering interfaces, classes, and generics. Resource: https://www.freecodecamp.org/news/learn-typescript-beginners-guide/",
       dueDate: createDateForWeekDay(june2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -165,7 +167,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the database design module from Khan Academy's SQL course, focusing on normalization and relationships. Resource: https://www.khanacademy.org/computing/computer-programming/sql",
       dueDate: createDateForWeekDay(june2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -176,7 +178,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Continue the 'Node.js API Masterclass' by Traversy Media. Complete the section on JWT authentication and user management. Resource: https://www.youtube.com/c/TraversyMedia",
       dueDate: createDateForWeekDay(june2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -185,7 +187,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a tutorial on MongoDB basics and document database design principles. Resource: https://university.mongodb.com/",
       dueDate: createDateForWeekDay(june2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -196,7 +198,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Learn about unit and integration testing for Node.js applications using Jest and Supertest. Resource: https://jestjs.io/docs/getting-started",
       dueDate: createDateForWeekDay(june2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -205,7 +207,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of Microsoft Learn: Azure Fundamentals focusing on cloud concepts and Azure services. Resource: https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/",
       dueDate: createDateForWeekDay(june2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -217,7 +219,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Learn about Context API and Redux for state management in React applications. Resource: https://www.youtube.com/c/TheNetNinja",
       dueDate: createDateForWeekDay(july2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -226,7 +228,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of SANS Cyber Aces Online focusing on networking security and system administration. Resource: https://www.cyberaces.org/",
       dueDate: createDateForWeekDay(july2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -237,7 +239,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Learn about testing React components using React Testing Library and Jest. Resource: https://testing-library.com/docs/react-testing-library/intro/",
       dueDate: createDateForWeekDay(july2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -246,7 +248,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a tutorial on microservices principles, patterns, and implementation with Node.js. Resource: https://microservices.io/",
       dueDate: createDateForWeekDay(july2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -257,7 +259,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start the Social Impact Strategy course on Coursera focusing on impact metrics and measurement frameworks. Resource: https://www.coursera.org/learn/social-impact",
       dueDate: createDateForWeekDay(july2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -266,7 +268,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the first module of freeCodeCamp's Data Visualization with D3.js course. Resource: https://www.freecodecamp.org/learn/data-visualization/",
       dueDate: createDateForWeekDay(july2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -277,7 +279,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Udacity's Software Architecture & Design course focusing on architectural patterns and design principles. Resource: https://www.udacity.com/course/software-architecture-design--ud821",
       dueDate: createDateForWeekDay(july2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -285,8 +287,8 @@ export function generateSampleTasks(): Task[] {
       title: "Learn Technical Documentation Best Practices",
       description:
         "Complete a tutorial on creating effective technical documentation for software projects. Resource: https://www.writethedocs.org/guide/",
-      dueDate: createDateForWeekDay(july2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      dueDate: createDateForWeekDay(july2025FirstMonday, 3, 3), // Week 3 Thursday
+      category: "Other",
       completed: false,
     },
 
@@ -298,7 +300,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start the Agile Development course on Coursera focusing on Scrum and Kanban methodologies. Resource: https://www.coursera.org/learn/agile-development",
       dueDate: createDateForWeekDay(august2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -307,7 +309,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a module on effective technical mentorship and coaching techniques for engineering teams. Resource: https://www.edx.org/learn/engineering/engineering-leadership",
       dueDate: createDateForWeekDay(august2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -318,7 +320,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start the User Experience Research and Design course on Coursera focusing on user research methods and analysis. Resource: https://www.coursera.org/specializations/michiganux",
       dueDate: createDateForWeekDay(august2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -327,7 +329,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a module on effective stakeholder management and communication strategies for technical projects. Resource: https://www.edx.org/learn/product-management",
       dueDate: createDateForWeekDay(august2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -338,7 +340,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Google's Project Management Certificate focusing on project planning and execution. Resource: https://www.coursera.org/professional-certificates/google-project-management",
       dueDate: createDateForWeekDay(august2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -347,7 +349,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete Atlassian's Agile Project Management tutorial focusing on agile ceremonies and artifacts. Resource: https://www.atlassian.com/agile",
       dueDate: createDateForWeekDay(august2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -358,7 +360,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Harvard's Data Science course on edX focusing on data analysis methods and tools. Resource: https://www.edx.org/learn/data-science/harvard-university-data-science-r-basics",
       dueDate: createDateForWeekDay(august2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -367,7 +369,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a module on effective data visualization principles and tools for impact reporting. Resource: https://www.coursera.org/learn/datavisualization",
       dueDate: createDateForWeekDay(august2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -379,7 +381,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Google's Machine Learning Crash Course focusing on ML concepts and TensorFlow basics. Resource: https://developers.google.com/machine-learning/crash-course",
       dueDate: createDateForWeekDay(september2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -388,7 +390,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a module on ethical AI development and responsible implementation practices. Resource: https://www.fast.ai/",
       dueDate: createDateForWeekDay(september2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -399,7 +401,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Docker's official tutorial for beginners focusing on containerization basics and Docker commands. Resource: https://docs.docker.com/get-started/",
       dueDate: createDateForWeekDay(september2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -408,7 +410,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete the Kubernetes Basics tutorial from kubernetes.io focusing on pod deployment and scaling. Resource: https://kubernetes.io/docs/tutorials/kubernetes-basics/",
       dueDate: createDateForWeekDay(september2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -419,7 +421,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start HashiCorp's Terraform tutorial focusing on infrastructure as code principles and basic commands. Resource: https://learn.hashicorp.com/terraform",
       dueDate: createDateForWeekDay(september2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -428,7 +430,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a tutorial on building Progressive Web Apps with service workers and offline functionality. Resource: https://web.dev/progressive-web-apps/",
       dueDate: createDateForWeekDay(september2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -439,7 +441,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start a course on developing effective technical strategies for social impact organizations. Resource: https://www.edx.org/learn/product-management",
       dueDate: createDateForWeekDay(september2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -448,7 +450,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a module on identifying, assessing, and mitigating risks in technical projects. Resource: https://www.open.edu/openlearn/money-business/project-management-the-basics/content-section-0",
       dueDate: createDateForWeekDay(september2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -460,7 +462,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Learn about integrating AI services into applications using APIs and SDKs. Resource: https://www.fast.ai/",
       dueDate: createDateForWeekDay(october2025FirstMonday, 0, 1), // Week 1 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -469,7 +471,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete a tutorial on designing and implementing voice interfaces for accessibility and inclusion. Resource: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/resources",
       dueDate: createDateForWeekDay(october2025FirstMonday, 0, 3), // Week 1 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -480,7 +482,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start Coursera's Blockchain Basics course focusing on distributed ledger technology and applications. Resource: https://www.coursera.org/learn/blockchain-basics",
       dueDate: createDateForWeekDay(october2025FirstMonday, 1, 1), // Week 2 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -489,7 +491,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete Unity Learn's Introduction to AR/VR Development focusing on immersive technology fundamentals. Resource: https://learn.unity.com/",
       dueDate: createDateForWeekDay(october2025FirstMonday, 1, 3), // Week 2 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -500,7 +502,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start UC San Diego's Learning How to Learn course on Coursera focusing on effective learning strategies. Resource: https://www.coursera.org/learn/learning-how-to-learn",
       dueDate: createDateForWeekDay(october2025FirstMonday, 2, 1), // Week 3 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -509,7 +511,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete Commonwealth of Learning's E-Learning Instructional Design tutorial focusing on creating effective learning materials. Resource: https://www.col.org/",
       dueDate: createDateForWeekDay(october2025FirstMonday, 2, 3), // Week 3 Thursday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
 
@@ -520,7 +522,7 @@ export function generateSampleTasks(): Task[] {
       description:
         "Start edX's Digital Government and Civic Tech course focusing on technology for public good. Resource: https://www.edx.org/learn/government/digital-government",
       dueDate: createDateForWeekDay(october2025FirstMonday, 3, 1), // Week 4 Tuesday
-      category: "Short",
+      category: "Other",
       completed: false,
     },
     {
@@ -529,7 +531,149 @@ export function generateSampleTasks(): Task[] {
       description:
         "Complete School of Data's Open Data Basics tutorial focusing on data standards and civic applications. Resource: https://schoolofdata.org/",
       dueDate: createDateForWeekDay(october2025FirstMonday, 3, 3), // Week 4 Thursday
-      category: "Short",
+      category: "Other",
+      completed: false,
+    },
+
+    // Skill Development Tasks - November 2025
+    // Week 1
+    {
+      id: "skill-nov-w1-tue",
+      title: "Complete Financial Technology Fundamentals",
+      description:
+        "Start edX's Introduction to FinTech course focusing on financial technology innovations and applications. Resource: https://www.edx.org/learn/fintech",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-nov-w1-thu",
+      title: "Learn Financial Inclusion Principles",
+      description:
+        "Complete a module on financial inclusion strategies and technologies for underserved communities. Resource: https://www.edx.org/learn/financial-inclusion",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-nov-w2-tue",
+      title: "Complete EdTech Platform Design",
+      description:
+        "Learn about designing effective educational technology platforms with focus on accessibility and engagement. Resource: https://www.edx.org/learn/education-technology",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-nov-w2-thu",
+      title: "Learn Student Data Privacy",
+      description:
+        "Complete a tutorial on protecting student data privacy in educational technology applications. Resource: https://studentprivacy.ed.gov/",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-nov-w3-tue",
+      title: "Complete IoT Applications for Social Good",
+      description:
+        "Learn about Internet of Things applications for community development and social impact. Resource: https://www.coursera.org/learn/iot",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-nov-w3-thu",
+      title: "Learn Cloud Cost Management",
+      description:
+        "Complete a tutorial on optimizing cloud costs and implementing FinOps practices. Resource: https://www.finops.org/introduction/what-is-finops/",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "skill-nov-w4-tue",
+      title: "Complete Technical Debt Management",
+      description:
+        "Learn strategies for identifying, measuring, and addressing technical debt in software projects. Resource: https://martinfowler.com/bliki/TechnicalDebt.html",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 3, 1), // Week 4 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-nov-w4-thu",
+      title: "Learn Code Review Best Practices",
+      description:
+        "Complete a tutorial on effective code review processes and feedback techniques. Resource: https://google.github.io/eng-practices/review/",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 3, 3), // Week 4 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Skill Development Tasks - December 2025
+    // Week 1
+    {
+      id: "skill-dec-w1-tue",
+      title: "Complete Remote Team Management",
+      description:
+        "Learn effective strategies for managing distributed technical teams and fostering collaboration. Resource: https://www.coursera.org/learn/remote-team-management",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 0, 1), // Week 1 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-dec-w1-thu",
+      title: "Learn Performance Management",
+      description:
+        "Complete a module on setting goals, providing feedback, and evaluating performance in technical teams. Resource: https://www.edx.org/learn/management/performance-management",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 0, 3), // Week 1 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "skill-dec-w2-tue",
+      title: "Complete Hiring & Team Building",
+      description:
+        "Learn strategies for recruiting, interviewing, and building diverse technical teams. Resource: https://www.coursera.org/learn/recruiting-hiring-onboarding-employees",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 1, 1), // Week 2 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-dec-w2-thu",
+      title: "Learn Budget Management",
+      description:
+        "Complete a tutorial on managing technical project budgets and resource allocation. Resource: https://www.edx.org/learn/budget-management",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 1, 3), // Week 2 Thursday
+      category: "Other",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "skill-dec-w3-tue",
+      title: "Complete Year-End Skill Assessment",
+      description:
+        "Review all skills learned throughout the year and assess proficiency levels. Create a plan for continued growth in 2026. Resource: https://www.mindtools.com/pages/article/newISS_91.htm",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 2, 1), // Week 3 Tuesday
+      category: "Other",
+      completed: false,
+    },
+    {
+      id: "skill-dec-w3-thu",
+      title: "Learn Career Development Planning",
+      description:
+        "Complete a module on creating effective career development plans for technical leadership roles. Resource: https://www.coursera.org/learn/career-development",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 2, 3), // Week 3 Thursday
+      category: "Other",
       completed: false,
     },
 
@@ -644,7 +788,7 @@ export function generateSampleTasks(): Task[] {
       completed: false,
     },
 
-    // Month 2: June 2025 - Technical Expertise with a Fun Twist (shifted from May)
+    // Month 2: June 2025 - Technical Expertise with a Fun Twist
     // Week 1
     {
       id: "june-w1-mon",
@@ -750,7 +894,7 @@ export function generateSampleTasks(): Task[] {
       completed: false,
     },
 
-    // Month 3: July 2025 - Leadership & Advocacy (shifted from June)
+    // Month 3: July 2025 - Leadership & Advocacy
     // Week 1
     {
       id: "july-w1-mon",
@@ -863,7 +1007,7 @@ export function generateSampleTasks(): Task[] {
       completed: false,
     },
 
-    // Month 4: August 2025 - Integrative Fun & Advocacy (shifted from July)
+    // Month 4: August 2025 - Integrative Fun & Advocacy
     // Week 1
     {
       id: "aug-w1-mon",
@@ -972,7 +1116,7 @@ export function generateSampleTasks(): Task[] {
       completed: false,
     },
 
-    // Month 5: September 2025 - Advanced Content & Expanding Influence (shifted from August)
+    // Month 5: September 2025 - Advanced Content & Expanding Influence
     // Week 1
     {
       id: "sept-w1-mon",
@@ -1082,7 +1226,7 @@ export function generateSampleTasks(): Task[] {
       completed: false,
     },
 
-    // Month 6: October 2025 - Authority Building & Strategic Positioning (shifted from September)
+    // Month 6: October 2025 - Authority Building & Strategic Positioning
     // Week 1
     {
       id: "oct-w1-mon",
@@ -1191,6 +1335,192 @@ export function generateSampleTasks(): Task[] {
       description: "Add key achievements to your portfolio (e.g., recording presentation clips, blog highlights).",
       dueDate: createDateForWeekDay(october2025FirstMonday, 3, 4), // Week 4 Friday
       category: "Job Search",
+      completed: false,
+    },
+
+    // Month 7: November 2025 - Specialized Skills & Industry Focus
+    // Week 1
+    {
+      id: "nov-w1-mon",
+      title: "Write Blog: Fintech for Social Good: Making Financial Services Accessible to All",
+      description: "Explore how financial technology can be leveraged for inclusion and social impact.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 0, 0), // Week 1 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "nov-w1-wed",
+      title: "Create Short: Tech Jargon Translated for Everyone",
+      description: "Create an engaging short explaining complex tech concepts in simple, accessible language.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 0, 2), // Week 1 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "nov-w1-fri",
+      title: "Networking: Attend Fintech Meetup",
+      description: "Join a financial technology event to connect with professionals in this specialized field.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 0, 4), // Week 1 Friday
+      category: "Networking",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "nov-w2-mon",
+      title: "Write Guide: EdTech Platform Design Principles",
+      description: "Create a comprehensive guide on designing effective educational technology platforms.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 1, 0), // Week 2 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "nov-w2-wed",
+      title: "Create Short: How Technology is Transforming Education",
+      description: "Film a short discussing the positive impact of technology on learning and education.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 1, 2), // Week 2 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "nov-w2-fri",
+      title: "Job Search Task: Research EdTech Companies",
+      description: "Identify educational technology organizations aligned with your values and expertise.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 1, 4), // Week 2 Friday
+      category: "Job Search",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "nov-w3-mon",
+      title: "Write Case Study: IoT Solutions for Community Development",
+      description: "Document a case study on using Internet of Things technology for social impact projects.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 2, 0), // Week 3 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "nov-w3-wed",
+      title: "Create Short: Tech on a Budget: Affordable Solutions for Nonprofits",
+      description: "Share cost-effective technology solutions for resource-constrained organizations.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 2, 2), // Week 3 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "nov-w3-fri",
+      title: "Networking: Connect with Civic Tech Leaders",
+      description: "Reach out to leaders in the civic technology space for potential collaboration opportunities.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 2, 4), // Week 3 Friday
+      category: "Networking",
+      completed: false,
+    },
+
+    // Week 4
+    {
+      id: "nov-w4-mon",
+      title: "Presentation: Technical Leadership in Mission-Driven Organizations",
+      description: "Prepare a presentation on effective technical leadership in social impact organizations.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 3, 0), // Week 4 Monday
+      category: "Presentation",
+      completed: false,
+    },
+    {
+      id: "nov-w4-wed",
+      title: "Create Short: A Day in the Life of a Tech for Good Leader",
+      description: "Film a 'day in the life' style short showcasing the diverse responsibilities in your role.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 3, 2), // Week 4 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "nov-w4-fri",
+      title: "Job Search Task: Apply to Social Impact Tech Role",
+      description: "Submit an application for a leadership position in a mission-driven tech organization.",
+      dueDate: createDateForWeekDay(november2025FirstMonday, 3, 4), // Week 4 Friday
+      category: "Job Search",
+      completed: false,
+    },
+
+    // Month 8: December 2025 - Reflection & Strategic Planning
+    // Week 1
+    {
+      id: "dec-w1-mon",
+      title: "Write Year-End Reflection: My Tech Leadership Journey",
+      description: "Reflect on your growth, challenges, and achievements throughout the year.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 0, 0), // Week 1 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "dec-w1-wed",
+      title: "Create Short: Highlights Reel: Best Moments of 2025",
+      description: "Compile a short video showcasing your professional highlights and key learnings from the year.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 0, 2), // Week 1 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "dec-w1-fri",
+      title: "Networking: Host Year-End Appreciation Event",
+      description: "Organize a virtual gathering to thank mentors, colleagues, and supporters from your network.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 0, 4), // Week 1 Friday
+      category: "Networking",
+      completed: false,
+    },
+
+    // Week 2
+    {
+      id: "dec-w2-mon",
+      title: "Write Strategic Plan: 2026 Career Development Roadmap",
+      description: "Create a comprehensive plan for your professional growth and content strategy for the coming year.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 1, 0), // Week 2 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "dec-w2-wed",
+      title: "Create Short: Tech Predictions for 2026",
+      description: "Share your insights on upcoming trends and innovations in technology and leadership.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 1, 2), // Week 2 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "dec-w2-fri",
+      title: "Job Search Task: Update Career Vision Statement",
+      description:
+        "Refine your long-term career vision based on the skills and experiences gained throughout the year.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 1, 4), // Week 2 Friday
+      category: "Job Search",
+      completed: false,
+    },
+
+    // Week 3
+    {
+      id: "dec-w3-mon",
+      title: "Write Guide: Building Your Personal Brand in Tech Leadership",
+      description:
+        "Create a comprehensive guide based on your experience developing a distinctive professional presence.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 2, 0), // Week 3 Monday
+      category: "Writing",
+      completed: false,
+    },
+    {
+      id: "dec-w3-wed",
+      title: "Create Short: Thank You to My Community",
+      description: "Film a heartfelt message expressing gratitude to your professional and personal support network.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 2, 2), // Week 3 Wednesday
+      category: "Short",
+      completed: false,
+    },
+    {
+      id: "dec-w3-fri",
+      title: "Networking: Schedule Q1 2026 Informational Interviews",
+      description: "Set up meetings with leaders in target organizations for the first quarter of the new year.",
+      dueDate: createDateForWeekDay(december2025FirstMonday, 2, 4), // Week 3 Friday
+      category: "Networking",
       completed: false,
     },
 

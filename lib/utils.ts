@@ -23,6 +23,8 @@ export function getMonthTheme(monthYear: string): string {
     "August 2025": "Integrative Fun & Advocacy",
     "September 2025": "Advanced Content & Expanding Influence",
     "October 2025": "Authority Building & Strategic Positioning",
+    "November 2025": "Specialized Skills & Industry Focus",
+    "December 2025": "Reflection & Strategic Planning",
   }
 
   return monthThemes[monthYear] || ""
@@ -43,6 +45,8 @@ export function getCategoryBadgeClass(category: string): string {
       return "bg-yellow-100 text-yellow-800"
     case "presentation":
       return "bg-purple-100 text-purple-800"
+    case "other":
+      return "bg-teal-100 text-teal-800"
     default:
       return "bg-gray-100 text-gray-800"
   }

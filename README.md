@@ -1,1 +1,1 @@
-![task-tracker](https://github.com/user-attachments/assets/a7bb019a-1ad1-44c1-88d8-7c4c50bb9712)
+![task-tracker](https://github.com/user-attachments/assets/5a41cd79-4fb7-40e3-97c5-cdbc481d54fd)

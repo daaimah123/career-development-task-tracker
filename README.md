@@ -2,7 +2,7 @@
 
 # Career Development Task Tracker
 
-A comprehensive task management application designed specifically for career development activities, helping professionals organize and track their career growth initiatives. Try it out [here](https://v0-career-development-task-tracker.vercel.app/)
+A comprehensive task management application designed specifically for career development activities, helping professionals organize and track their career growth initiatives. Try it out [here](https://v0-career-development-task-git-48c5b3-daaimah-tibreys-projects.vercel.app/)
 
 ![Career Development Task Tracker GIF](https://github.com/user-attachments/assets/a7bb019a-1ad1-44c1-88d8-7c4c50bb9712)
 
